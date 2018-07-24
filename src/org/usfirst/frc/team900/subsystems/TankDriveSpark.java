@@ -20,10 +20,7 @@ public class TankDriveSpark extends Subsystem {
     
     public TankDriveSpark()
     {
-        frontLeft = new Spark(Constants.FL_DRIVE_SPARK);
-        frontRight = new Spark(Constants.FR_DRIVE_SPARK);
-        backLeft = new Spark(Constants.BL_DRIVE_SPARK);
-        backRight = new Spark(Constants.BR_DRIVE_SPARK);
+
     }
     public void initDefaultCommand() {
         // <NOT NECESSARY> Set the default command for a subsystem here.
@@ -33,9 +30,6 @@ public class TankDriveSpark extends Subsystem {
     
     public void drive(double lValue, double rValue)
     {
-        frontLeft.set(lValue);
-        backLeft.set(lValue);
-        backRight.set(rValue);
-        backRight.set(rValue);
+
     }
 }
